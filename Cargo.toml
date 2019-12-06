@@ -1,0 +1,19 @@
+[package]
+name = "jsondb"
+version = "0.1.0"
+authors = ["Huy Tran <kingbazoka@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "*"
+actix-web = "1.0.0"
+r2d2 = "0.8"
+diesel = { version = "1.0.0", features = ["postgres", "r2d2"] }
+dotenv = "0.9.0"
+uuid = { version = "0.8", features = ["v4"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+futures = "0.1"
