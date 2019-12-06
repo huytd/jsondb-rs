@@ -1,6 +1,11 @@
-# jsondb-rs
+<p align="center"><img src="logo.svg" width="100px;" height="100px" /></p>
+<p align="center"><b>jsondb-rs</b></p>
 
-A self-hosted RESTful JSON storage service.
+---
+
+JSONdb is a RESTful JSON storage service that you can
+use to quickly develop your mobile and web app, without
+the need of any backend.
 
 ```
 POST  /storage       create a new JSON entry
@@ -10,13 +15,13 @@ PUT   /storage/{id}  update a JSON entry
 
 ---
 
-To clone and deploy this application on Heroku, your have two options:
+To deploy this application on Heroku, your have two options:
 
-**Click to deploy:**
+**Option 1: Click to deploy:**
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
-**Deploy manually:**
+**Option 2: Deploy manually:**
 
 ```
 $ clone https://github.com/huytd/jsondb-rs
