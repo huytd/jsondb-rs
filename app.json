@@ -3,6 +3,7 @@
   "description": "A RESTful JSON storage service",
   "repository": "https://github.com/huytd/jsondb-rs",
   "keywords": ["rust", "json", "api"],
+  "logo": "https://raw.githubusercontent.com/huytd/jsondb-rs/master/logo.svg",
   "addons": [ "heroku-postgresql" ],
   "buildpacks": [
     {
