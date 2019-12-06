@@ -19,8 +19,22 @@ use serde_json::Value;
 
 type Pool = r2d2::Pool<ConnectionManager<PgConnection>>;
 
+const DESCRIPTION: &str = r#"
+JSONdb is a RESTful JSON storage service that you can
+use to quickly develop your mobile and web app, without
+the need of any backend.
+
+POST  /storage       create a new JSON entry
+GET   /storage/{id}  read a JSON entry
+PUT   /storage/{id}  update a JSON entry
+
+You can also host JSONdb on your own server, or a free
+Heroku dyno, visit: https://github.com/huytd/jsondb-rs/
+for more detail.
+"#;
+
 fn index() -> HttpResponse {
-    HttpResponse::from("Welcome to JSONdb\r\n\r\nPOST  /storage      create a new JSON entry\r\nGET   /storage/{id}  read a JSON entry\r\nPUT   /storage/{id}  update a JSON entry")
+    HttpResponse::from(DESCRIPTION)
 }
 
 fn create_store(request_data: web::Json<serde_json::Value>, pool: web::Data<Pool>) -> HttpResponse {

@@ -1,0 +1,12 @@
+{
+  "name": "JSONdb",
+  "description": "A RESTful JSON storage service",
+  "repository": "https://github.com/huytd/jsondb-rs",
+  "keywords": ["rust", "json", "api"],
+  "addons": [ "heroku-postgresql" ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/emk/heroku-buildpack-rust"
+    }
+  ]
+}

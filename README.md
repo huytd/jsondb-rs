@@ -10,7 +10,13 @@ PUT   /storage/{id}  update a JSON entry
 
 ---
 
-To clone and deploy this application on Heroku, follow these steps:
+To clone and deploy this application on Heroku, your have two options:
+
+**Click to deploy:**
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+**Deploy manually:**
 
 ```
 $ clone https://github.com/huytd/jsondb-rs
