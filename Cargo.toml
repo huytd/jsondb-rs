@@ -8,7 +8,9 @@ edition = "2018"
 
 [dependencies]
 env_logger = "*"
-actix-web = "1.0.0"
+actix-web = "2.0"
+actix-files = "0.2.1"
+actix-rt = "1.1.0"
 r2d2 = "0.8"
 diesel = { version = "1.0.0", features = ["postgres", "r2d2"] }
 dotenv = "0.9.0"
